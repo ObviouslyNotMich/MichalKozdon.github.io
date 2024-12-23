@@ -1,7 +1,99 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World!!!</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michal Kozdon | Portfolio</title>
+  <!-- Tailwind CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="bg-gray-50 text-gray-700 flex flex-col min-h-screen">
+  <!-- NAVIGATION -->
+  <nav class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo / Brand -->
+        <a href="index.html" class="text-xl font-bold hover:text-gray-300">
+          MK Portfolio
+        </a>
+        <!-- Nav Links -->
+        <div>
+          <ul class="flex space-x-4">
+            <li>
+              <a href="index.html" class="hover:text-gray-300">Home</a>
+            </li>
+            <li>
+              <a href="experience.html" class="hover:text-gray-300">Experience</a>
+            </li>
+            <li>
+              <a href="education.html" class="hover:text-gray-300">Education</a>
+            </li>
+            <li>
+              <a href="projects.html" class="hover:text-gray-300">Projects</a>
+            </li>
+            <li>
+              <a href="skills.html" class="hover:text-gray-300">Skills</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-gray-300">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header
+    class="bg-cover bg-center bg-no-repeat h-[500px] flex items-center justify-center relative"
+    style="background-image: url('https://via.placeholder.com/1200x500?text=Hero+Image');"
+  >
+    <div class="bg-black bg-opacity-60 p-8 rounded-md text-center">
+      <h1 class="text-4xl font-bold text-white mb-4">
+        Michal Kozdon
+      </h1>
+      <h2 class="text-xl text-gray-300 mb-6">
+        Aspiring Software & AI Engineer
+      </h2>
+      <p class="text-gray-200 max-w-2xl mx-auto mb-6">
+        “My aim is to innovate in software and contribute to the development of 
+        new systems so that the world can become a slightly better place.”
+      </p>
+      <a
+        href="contact.html"
+        class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded transition"
+      >
+        Get in Touch
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow">
+    <section class="max-w-7xl mx-auto py-8 px-4">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="leading-relaxed mb-4">
+        I am a Computer Science graduate with a passion for Artificial 
+        Intelligence, Robotics, and Software Development. I enjoy exploring 
+        new technologies and developing solutions that help make a positive 
+        impact on the world.
+      </p>
+      <p class="leading-relaxed">
+        Through my experiences in various internships, university projects, 
+        and international exchanges, I’ve cultivated a strong foundation in 
+        AI, machine learning, and software engineering principles.
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p>&copy; 2024 Michal Kozdon</p>
+    </div>
+  </footer>
 </body>
 </html>
