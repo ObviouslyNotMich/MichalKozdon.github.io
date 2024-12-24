@@ -6,37 +6,23 @@
   <title>Education | Michal Kozdon</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Script to load navbar.html -->
+  <script src="load-navbar.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-700 flex flex-col min-h-screen">
+<body class="bg-gray-50 text-gray-700 flex flex-col min-h-screen text-sm">
   <!-- NAV -->
-  <nav class="bg-gray-800 text-white">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex justify-between items-center h-16">
-        <a href="index.html" class="text-xl font-bold hover:text-gray-300">
-          Portfolio
-        </a>
-        <div>
-          <ul class="flex space-x-4">
-            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
-            <li><a href="experience.html" class="hover:text-gray-300">Experience</a></li>
-            <li><a href="education.html" class="hover:text-gray-300">Education</a></li>
-            <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
-            <li><a href="skills.html" class="hover:text-gray-300">Skills</a></li>
-            <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <div id="navbar-container"></div>
 
   <main class="flex-grow">
-    <section class="max-w-7xl mx-auto py-8 px-4">
-      <h1 class="text-3xl font-semibold mb-6">Education & Certificates</h1>
+    <section class="max-w-5xl mx-auto py-6 px-3 reveal">
+      <h1 class="text-lg md:text-xl font-semibold mb-3">Education & Certificates</h1>
 
       <!-- AUAS -->
-      <div class="mb-6">
-        <h2 class="text-xl font-bold">Amsterdam University of Applied Sciences</h2>
-        <h3 class="italic text-sm">Bachelor of Science, Computer Science (HBO-ICT)</h3>
+      <div class="mb-4 reveal">
+        <h2 class="text-base md:text-lg font-bold">Amsterdam University of Applied Sciences</h2>
+        <h3 class="italic text-xs md:text-sm">Bachelor of Science, Computer Science (HBO-ICT)</h3>
         <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Dutch GPA: 8.6 | Cumulative GPA: 4.0</li>
           <li>Graduated Cum Laude.</li>
@@ -46,9 +32,9 @@
       </div>
 
       <!-- Horizon College -->
-      <div class="mb-6">
-        <h2 class="text-xl font-bold">Horizon College, Hoorn</h2>
-        <h3 class="italic text-sm">Application and Software Developer</h3>
+      <div class="mb-4 reveal">
+        <h2 class="text-base md:text-lg font-bold">Horizon College, Hoorn</h2>
+        <h3 class="italic text-xs md:text-sm">Application and Software Developer</h3>
         <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Dutch GPA: 9.0</li>
           <li>Focused on full-stack development using C#, JavaScript, and PHP.</li>
@@ -57,29 +43,29 @@
       </div>
 
       <!-- Toyo University -->
-      <div class="mb-6">
-        <h2 class="text-xl font-bold">Toyo University, Tokyo, Japan</h2>
-        <h3 class="italic text-sm">Minor in Japanese Social Sciences & Android VR Development Certificate</h3>
+      <div class="mb-4 reveal">
+        <h2 class="text-base md:text-lg font-bold">Toyo University, Tokyo, Japan</h2>
+        <h3 class="italic text-xs md:text-sm">Minor in Japanese Social Sciences & Android VR Development Certificate</h3>
         <ul class="list-disc list-inside mt-2 space-y-1">
-          <li>Grade: 8</li>
+          <li>GPA: 4.0</li>
           <li>Classes in Japanese Language, History, Media Politics, and Android AR/VR Development.</li>
         </ul>
       </div>
 
       <!-- Cambridge -->
-      <div class="mb-6">
-        <h2 class="text-xl font-bold">University of Cambridge, England</h2>
-        <h3 class="italic text-sm">Cambridge C2 Advanced (CAE)</h3>
+      <div class="mb-4 reveal">
+        <h2 class="text-base md:text-lg font-bold">University of Cambridge, England</h2>
+        <h3 class="italic text-xs md:text-sm">Cambridge C2 Advanced (CAE)</h3>
         <ul class="list-disc list-inside mt-2 space-y-1">
-          <li>Grade: 208</li>
+          <li>Achieved Grade A (208/210)</li>
           <li>Focused on advanced English language proficiency.</li>
         </ul>
       </div>
     </section>
   </main>
 
-  <footer class="bg-gray-800 text-white py-4">
-    <div class="max-w-7xl mx-auto px-4 text-center">
+  <footer class="bg-gray-800 text-white py-3">
+    <div class="max-w-5xl mx-auto px-3 text-center text-xs">
       <p>&copy; 2024 Michal Kozdon</p>
     </div>
   </footer>

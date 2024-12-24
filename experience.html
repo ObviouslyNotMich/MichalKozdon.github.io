@@ -6,39 +6,27 @@
   <title>Experience | Michal Kozdon</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Script to load navbar.html -->
+  <script src="load-navbar.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-700 flex flex-col min-h-screen">
+<body class="bg-gray-50 text-gray-700 flex flex-col min-h-screen text-sm">
   <!-- NAVIGATION -->
-  <nav class="bg-gray-800 text-white">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex justify-between items-center h-16">
-        <a href="index.html" class="text-xl font-bold hover:text-gray-300">
-          Portfolio
-        </a>
-        <div>
-          <ul class="flex space-x-4">
-            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
-            <li><a href="experience.html" class="hover:text-gray-300">Experience</a></li>
-            <li><a href="education.html" class="hover:text-gray-300">Education</a></li>
-            <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
-            <li><a href="skills.html" class="hover:text-gray-300">Skills</a></li>
-            <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <div id="navbar-container"></div>
 
   <main class="flex-grow">
-    <section class="max-w-7xl mx-auto py-8 px-4">
-      <h1 class="text-3xl font-semibold mb-6">Work Experience</h1>
+    <section class="max-w-5xl mx-auto py-6 px-3 reveal">
+      <h1 class="text-lg md:text-xl font-semibold mb-3">Work Experience</h1>
 
       <!-- NLR -->
-      <div class="mb-8">
-        <h2 class="text-xl font-bold text-gray-800">
+      <div class="mb-4 reveal">
+        <h2 class="text-base md:text-lg font-bold text-gray-800">
           Netherlands Aerospace Centre (NLR), Amsterdam
         </h2>
-        <p class="italic text-sm">Artificial Intelligence Software Engineer Intern (Mar 2024 – Oct 2024)</p>
+        <p class="italic text-xs md:text-sm">
+          Artificial Intelligence Software Engineer Intern (Mar 2024 – Oct 2024)
+        </p>
         <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Developed and optimized AI models for real-time heart rate detection using rPPG.</li>
           <li>Created an in-house AI dashboard solution for real-time data visualization and monitoring.</li>
@@ -47,11 +35,13 @@
       </div>
 
       <!-- Cognizant -->
-      <div class="mb-8">
-        <h2 class="text-xl font-bold text-gray-800">
+      <div class="mb-4 reveal">
+        <h2 class="text-base md:text-lg font-bold text-gray-800">
           Cognizant Digital Studio, Amsterdam
         </h2>
-        <p class="italic text-sm">R&D Software Engineer Intern (Jan 2022 – Sep 2022)</p>
+        <p class="italic text-xs md:text-sm">
+          R&D Software Engineer Intern (Jan 2022 – Sep 2022)
+        </p>
         <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Developed AI edge computing solutions on a Jetson Nano.</li>
           <li>Implemented indoor GPS and LIDAR sensor systems tied to cloud computing technologies.</li>
@@ -60,30 +50,40 @@
       </div>
 
       <!-- AUAS: Open Day, Intl Office, TA -->
-      <div class="mb-8">
-        <h2 class="text-xl font-bold text-gray-800">
+      <div class="mb-4 reveal">
+        <h2 class="text-base md:text-lg font-bold text-gray-800">
           Amsterdam University of Applied Sciences
         </h2>
-        <p class="italic text-sm">Open Day Team Representative (Sep 2020 – Present)</p>
+        <p class="italic text-xs md:text-sm mt-2">
+          Open Day Team Representative (Sep 2020 – Present)
+        </p>
         <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Organized event setups, guided prospective students, and managed cleanup.</li>
         </ul>
-        <p class="italic text-sm mt-4">International Office Student Representative (Sep 2023 – Oct 2024)</p>
+
+        <p class="italic text-xs md:text-sm mt-4">
+          International Office Student Representative (Sep 2023 – Oct 2024)
+        </p>
         <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Guided students on exchange opportunities, leveraging my own Minor in Tokyo, Japan.</li>
         </ul>
-        <p class="italic text-sm mt-4">Student Teaching Assistant (Sep 2021 – Oct 2024)</p>
+
+        <p class="italic text-xs md:text-sm mt-4">
+          Student Teaching Assistant (Sep 2021 – Oct 2024)
+        </p>
         <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Supported courses like Databases, Individual Projects, Team Projects, and IoT.</li>
         </ul>
       </div>
 
       <!-- Novusoft -->
-      <div class="mb-8">
-        <h2 class="text-xl font-bold text-gray-800">
+      <div class="mb-4 reveal">
+        <h2 class="text-base md:text-lg font-bold text-gray-800">
           Novusoft, Enkhuizen
         </h2>
-        <p class="italic text-sm">Software Developer (.NET & Azure DevOps) (Sep 2017 – Jul 2020)</p>
+        <p class="italic text-xs md:text-sm mt-2">
+          Software Developer (.NET & Azure DevOps) (Sep 2017 – Jul 2020)
+        </p>
         <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Started as an intern and transitioned to a full software developer role.</li>
           <li>Focused on backend development for NovuPortal using C#, Azure DevOps, and Agile Scrum.</li>
@@ -92,8 +92,8 @@
     </section>
   </main>
 
-  <footer class="bg-gray-800 text-white py-4">
-    <div class="max-w-7xl mx-auto px-4 text-center">
+  <footer class="bg-gray-800 text-white py-3">
+    <div class="max-w-5xl mx-auto px-3 text-center text-xs">
       <p>&copy; 2024 Michal Kozdon</p>
     </div>
   </footer>
