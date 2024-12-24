@@ -1,11 +1,68 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400&display=swap');
+
+body {
+  background-color: #f4eefc;
+  font-family: 'Google Sans', sans-serif;
+}
+
+/* Reveal (pop-in) classes */
 .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* Slide-in Keyframes (unchanged) */
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
   }
-  .reveal.active {
+  100% {
+    transform: translateX(0);
     opacity: 1;
-    transform: translateY(0px);
   }
-  
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slide-in-left {
+  animation: slide-in-left 1s ease-out forwards;
+}
+.animate-slide-in-right {
+  animation: slide-in-right 1s ease-out forwards;
+}
+
+/* Make sure the navbar remains transparent or styled as you prefer */
+#navbar-container {
+  background-color: transparent;
+}
+#navbar-container a {
+  color: #693b7c;
+  transition: color 0.3s ease;
+}
+#navbar-container a:hover {
+  color: #b19cd9;
+}
+
+/* Right half image styles */
+.right-half {
+  padding-right: 2rem; /* Adjust padding as needed */
+}
+
+.right-half img {
+  border-radius: 1rem; /* Rounded edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for fade effect */
+}
