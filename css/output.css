@@ -1086,6 +1086,16 @@ body {
   /* Shadow for fade effect */
 }
 
+.hero-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.hero-image img {
+  transition: opacity 1s ease-in-out;
+}
+
 .hover\:bg-blue-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
