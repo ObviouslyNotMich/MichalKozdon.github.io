@@ -27,3 +27,32 @@ document.addEventListener("DOMContentLoaded", function() {
     }, { threshold: 0.1 });
     skillBars.forEach(bar => barObserver.observe(bar));
   });
+
+// Image Rotation for Hero Section
+document.addEventListener('DOMContentLoaded', () => {
+  const heroImage = document.getElementById('heroImage');
+  const imageFolder = 'assets/home/';
+  
+  // List of images in the assets/home folder
+  const imageList = [
+    'image1.jpg',
+    'image2.jpg',
+    'image3.jpg',
+    'image4.jpg'
+  ];
+  
+  let currentIndex = 0;
+  
+  function changeHeroImage() {
+    currentIndex = (currentIndex + 1) % imageList.length;
+    heroImage.style.opacity = '0';
+    
+    setTimeout(() => {
+      heroImage.src = `${imageFolder}${imageList[currentIndex]}`;
+      heroImage.style.opacity = '1';
+    }, 1000); // Matches the transition duration
+  }
+  
+  // Start image rotation every 10 seconds
+  setInterval(changeHeroImage, 10000);
+});
