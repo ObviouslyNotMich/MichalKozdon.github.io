@@ -74,10 +74,48 @@ body {
 
 .hero-image-container {
   position: relative;
-  overflow: hidden;
-  height: 100%;
+  overflow: hidden; /* Prevents any overflow */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-image img {
+  max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+  max-height: 100%; /* Ensures the image doesn't exceed the container's height */
+  object-fit: contain; /* Ensures the full image fits without cropping */
+  object-position: center; /* Centers the image */
   transition: opacity 1s ease-in-out;
+}
+
+/* Carousel Media */
+.carousel-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f9fafb;
+}
+
+.carousel img,
+.carousel video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Show full image/video without cropping */
+}
+
+/* Navigation Buttons */
+.carousel-container button {
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.carousel-container button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
